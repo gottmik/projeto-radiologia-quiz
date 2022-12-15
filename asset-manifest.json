@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5ab7b53d.css",
+    "main.js": "/static/js/main.00a2e1ac.js",
+    "static/js/787.6d2719ae.chunk.js": "/static/js/787.6d2719ae.chunk.js",
+    "static/media/Anton-Regular.ttf": "/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
+    "static/media/Imagem_fantasma_do_Palato_duro.jfif": "/static/media/Imagem_fantasma_do_Palato_duro.090a4f89627cb67d712c.jfif",
+    "static/media/Espinha_nasal_inferior.jfif": "/static/media/Espinha_nasal_inferior.ef2983c69cf80a2af5d7.jfif",
+    "static/media/Fissura_pterigomaxilar.jfif": "/static/media/Fissura_pterigomaxilar.eafffe9415e9b8852de6.jfif",
+    "static/media/Fossa Mandibular.jfif": "/static/media/Fossa Mandibular.5f18b137be5dde735ba6.jfif",
+    "static/media/Angulo_da_mandibula.jfif": "/static/media/Angulo_da_mandibula.ed3437248131fdc6e15a.jfif",
+    "static/media/Base_da_mandibula.jfif": "/static/media/Base_da_mandibula.70f732e84e72407883bd.jfif",
+    "static/media/DMSans-Medium.ttf": "/static/media/DMSans-Medium.150680530af9dd9fd00b.ttf",
+    "index.html": "/index.html",
+    "main.5ab7b53d.css.map": "/static/css/main.5ab7b53d.css.map",
+    "main.00a2e1ac.js.map": "/static/js/main.00a2e1ac.js.map",
+    "787.6d2719ae.chunk.js.map": "/static/js/787.6d2719ae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ab7b53d.css",
+    "static/js/main.00a2e1ac.js"
+  ]
+}
