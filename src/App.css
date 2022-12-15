@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+/* FONTES  */
+@font-face {
+  font-family: Anton;
+  src: url(..//src/fonts/Anton-Regular.ttf);
+  font-family: Dm;
+  src: url(..//src/fonts/DMSans-Medium.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* MUITO GRANDES */
+/* @media (min-width: 769px) and (max-width: 2300px) {
+} */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* //ESSA SESSAO SERÁ IMPLEMENTADA DO FUTURO
+//ESSA SESSAO SERÁ IMPLEMENTADA DO FUTURO */
+/* //ESSA SESSAO SERÁ IMPLEMENTADA DO FUTURO */
+
+
+
+
+
+
+
+/* CELULAR E TABLET */
+@media screen and (max-width: 768px) {
+  .FirstSection {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .FirstSection{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .FirstSection h1{
+    padding: 35px;
+    padding-bottom: 0px;
+  }
+
+  .FirstSection h6{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    margin-left: 35px;
+  }
+
+  
+
+  
+
+  .btnStart{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 120px;
+  }
+
+  .btnStart button {
+    background: #29042a;
+    border-radius: 11px;
+    padding: 20px 45px;
+    color: #f4f4f7;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    
+    font-size: 1.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.Searching {
+  padding-top:13%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 55px;
+  width: 80%;
+  margin: 0 auto;
+}
+.Searching span {
+  margin: 5px 10px;
+  font-size: 2.5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Searching input {
+  width: 90%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.134);
+  border: 2px solid white ;
+  border-radius: 0.9rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.SecondSection{
+  height: 100vh;
+  background-color: #4a4a4a;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* // MUITO PEQUENOS
+@media screen and (max-width: 320px) {
+  .dBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .FirstSection {
+    font-family: Dm;
+    text-align: left;
+    position: relative;
+    background-color: rgb(112, 211, 70);
+    padding: 20px;
+  }
+  .Searching {
+    display: flex;
+    justify-content: center;
+  }
+  .Searching span {
+    margin: auto;
+  }
+
+  .Searching input {
+    width: 90%;
+  }
+
+  input {
+    background-color: #e7e5e5;
+    border: 0;
+    padding: 10px 0;
+    margin: 5px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+  }
+} */
