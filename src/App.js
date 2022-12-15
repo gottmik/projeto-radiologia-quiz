@@ -3,8 +3,6 @@ import { Anatomias } from "../src/data.js";
 import "./App.css";
 import Anatomy from "../src/Components/anatomy.jsx";
 
-
-
 function App() {
   const datas = Anatomias ?? []; // PUXANDO O ARRAY DO DATABASE
   // const [busca, setBusca] = useState('');
@@ -22,28 +20,36 @@ function App() {
     setDados(updatedList);
   };
 
+  const titleRef = useRef();
 
-  const titleRef = useRef()
-  
-  function scrollTo(){
-    titleRef.current.scrollIntoView({ behavior: 'smooth' })
+  function scrollTo() {
+    titleRef.current.scrollIntoView({ behavior: "smooth" });
   }
-  
 
   return (
     <div className="dBody">
       <div className="FirstSection">
-        <h1>
-          Ola Dentistas!<br></br>
-          Esse e o seu espaco para estudar Anatomia!<br></br>
-          Se aventure por esse WEB APP gratuito.<br></br>
-        </h1>
-        <h6>Desenvolvido por Marcela Froes<br></br>
-        Dentista Implantodontista, Radiologista e<br></br>
-        Aspirante a programadora.</h6>
-      <div className="btnStart">
-        <button onClick={scrollTo}>COMECAR</button>
-      </div>
+        <div className="PaddingP">
+          <div>
+            <h6>
+              Desenvolvido por Marcela Froes<br></br>
+              Dentista Implantodontista, Radiologista e<br></br>
+              Aspirante a programadora.
+              
+            </h6>
+          </div>
+          <div>
+            <h1>
+              Ola Dentistas!<br></br>
+              Esse e o seu espaco para estudar Anatomia!<br></br>
+              Se aventure por esse WEB APP gratuito.<br></br>
+            </h1>
+          </div>
+
+          <div className="btnStart">
+            <button onClick={scrollTo}>COMECAR</button>
+          </div>
+        </div>
       </div>
 
       <div ref={titleRef} id="secondSec" className="SecondSection">

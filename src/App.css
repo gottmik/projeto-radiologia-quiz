@@ -43,33 +43,33 @@
 
   .FirstSection{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
   }
 
+  .PaddingP{
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom:70px;
+  }
+
   .FirstSection h1{
-    padding: 35px;
-    padding-bottom: 0px;
+    
   }
 
   .FirstSection h6{
-    position: absolute;
-    top: 10px;
-    left: 0;
-    margin-left: 35px;
+    
   }
 
-  
-
-  
-
   .btnStart{
-    position: absolute;
-    margin: 0 auto;
-    bottom: 120px;
+   align-self: center;
+   
   }
 
   .btnStart button {
