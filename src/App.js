@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { Anatomias } from "../src/data.js";
 import "./App.css";
 import Anatomy from "./Components/anatomy.jsx";
+import Modelidades from "./Components/modelidades.jsx";
 
 function App() {
   const datas = Anatomias ?? []; // PUXANDO O ARRAY DO DATABASE
@@ -50,6 +51,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Modelidades/>
 
       <div ref={titleRef} id="secondSec" className="SecondSection">
         <div className="Searching">
