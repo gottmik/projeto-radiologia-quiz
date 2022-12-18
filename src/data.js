@@ -49,7 +49,7 @@ export const Anatomias = [
   },
   {
     id: 6,
-    name: "Imagem Fantasma do Palato duro",
+    name: "IM do Palato duro",
     img: Imagem_fantasma_do_Palato_duro,
     texto: "",
     corte: "Panoramico",

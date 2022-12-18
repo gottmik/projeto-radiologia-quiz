@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Anatomias } from "../src/data.js";
 import "./App.css";
-import Anatomy from "../src/Components/anatomy.jsx";
+import Anatomy from "./Components/anatomy.jsx";
 
 function App() {
   const datas = Anatomias ?? []; // PUXANDO O ARRAY DO DATABASE
@@ -35,7 +35,6 @@ function App() {
               Desenvolvido por Marcela Froes<br></br>
               Dentista Implantodontista, Radiologista e<br></br>
               Aspirante a programadora.
-              
             </h6>
           </div>
           <div>
@@ -54,9 +53,12 @@ function App() {
 
       <div ref={titleRef} id="secondSec" className="SecondSection">
         <div className="Searching">
-          <span class="material-symbols-outlined">search</span>
-
-          <input type="text" onChange={filterOnChange}></input>
+          <div className="icone-lupa">
+            <span class="material-symbols-outlined">search</span>
+          </div>
+          <div className="icone-input">
+            <input type="text" onChange={filterOnChange}></input>
+          </div>
         </div>
         <div>
           {dados.map((datas) => (
