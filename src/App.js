@@ -33,28 +33,31 @@ function App() {
         <div className="PaddingP">
           <div>
             <h6>
-              Desenvolvido por Marcela Froes<br></br>
+              Desenvolvido por Marcela Fróes<br></br>
               Dentista Implantodontista, Radiologista e<br></br>
-              Aspirante a programadora.
+              Aspirante a Programadora.
             </h6>
           </div>
           <div>
             <h1>
-              Ola Dentistas!<br></br>
-              Esse e o seu espaco para estudar Anatomia!<br></br>
+              Olá Dentistas!<br></br>
+              Esse e o seu espaço para estudar Anatomia!<br></br>
               Se aventure por esse WEB APP gratuito.<br></br>
             </h1>
           </div>
 
           <div className="btnStart">
-            <button onClick={scrollTo}>COMECAR</button>
+            <button onClick={scrollTo}>COMEÇAR</button>
           </div>
         </div>
       </div>
 
+      <div ref={titleRef}>
       <Modelidades/>
+      </div>
+      
 
-      <div ref={titleRef} id="secondSec" className="SecondSection">
+      <div  id="secondSec" className="SecondSection">
         <div className="Searching">
           <div className="icone-lupa">
             <span class="material-symbols-outlined">search</span>
