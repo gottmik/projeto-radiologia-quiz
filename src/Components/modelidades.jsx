@@ -11,6 +11,9 @@ export default function Modelidades() {
 
     
     <div  className='thirdSection'>
+        <div className='thirdSectionHeader'>
+            <h1>Escolha o seu estudo</h1>
+        </div>
         <div className='quadrado'>
             <div className='quadrado-img-div'>
                 <img src={lesoes} alt="" />
