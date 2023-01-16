@@ -6,7 +6,7 @@ import fissura_pterigomaxilar from "./Img/Fissura_pterigomaxilar.jfif"
 import Fossa_Mandibular from "./Img/Fossa Mandibular.jfif"
 import Imagem_fantasma_do_Palato_duro from "./Img/Imagem_fantasma_do_Palato_duro.jfif"
 
-export const Anatomias = [
+export const Panoramica = [
   {
     id: 1,
     name: "Angulo da Manbibula",
@@ -56,3 +56,15 @@ export const Anatomias = [
     info:"",
   }
 ];
+
+export const Tomografia = [
+  {
+    id: 1,
+    name: "Cigarro",
+    img: angulo_da_mand,
+    texto: "Facil de identificar em qualquer corte e tomara radiologica",
+    corte: "Panoramica",
+    info: "Facil de identificar em qualquer corte e tomara radiologica",
+  }
+]
+  
