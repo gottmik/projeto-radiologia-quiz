@@ -6,10 +6,30 @@
 }
 
 .thirdSection{
-    background: linear-gradient(-45deg, #ee7752, #e73c7e);
+    background:rgb(162, 162, 162);
     width: 100%;
     height: 100vh;
     padding:20px;
+}
+
+.thirdSectionHeader{
+    background-color: rgb(255, 255, 255, 0.5);
+    margin: 0;
+    padding: 0;
+}
+
+.liink{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+
+.testess2{
+    position: absolute;
+    bottom: 10%;
+    left:5%;
 }
 
 .quadrado{
@@ -24,6 +44,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
     
 }
 
@@ -50,18 +71,15 @@
     
 }
 
-.quadradinho img{
-    width: 50%;
-}
 
 
 .quadradoSec{
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    
+    
     width: 100%;
     height: 20%;
-    margin-bottom:20px;
+    
     
 }
 
@@ -71,21 +89,39 @@
 
 .quadradinho1{
     width: 90%;
+    height: 90%;
     background-color: rgba(255, 255, 255, 0.511);
     border-radius: 2.5rem;
     margin-right:8px;  
+    position: relative;
+}
+.BOXSVG{
+    position: absolute;
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    margin:10px;
+    stroke-dasharray: 190;
+    stroke-dashoffset: 190;
 }
 
-.quadradinho h3{
-    
-
+.BOXSVG:nth-child(1){   
+    stroke-dashoffset: 0;
+    stroke: rgb(102, 102, 102);
 }
+.BOXSVG:nth-child(2){   
+    stroke: rgb(49, 35, 245);
+    transition: stroke-dashoffset 0.8s;
+}
+
 
 .quadradinho2{
     width: 90%;
+    height: 90%;
     background-color: rgba(255, 255, 255, 0.511);
     border-radius: 2.5rem;
     margin-left:8px;
+    position: relative;
 }
 
 .retangulo{
@@ -97,6 +133,7 @@
     margin-bottom:20px;
     display: flex;
     justify-content: space-between;
+    position: relative;
     align-items: center;
 
 }
