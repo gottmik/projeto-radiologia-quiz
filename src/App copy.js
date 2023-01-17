@@ -63,14 +63,7 @@ function App() {
       
 
       <div  id="secondSec" className="SecondSection">
-        <div className="Searching">
-          <div className="icone-lupa">
-            <span class="material-symbols-outlined">search</span>
-          </div>
-          <div className="icone-input">
-            <input type="text" onChange={filterOnChange}></input>
-          </div>
-        </div>
+        
         <div>
           {dados.map((datas) => (
             <Anatomy

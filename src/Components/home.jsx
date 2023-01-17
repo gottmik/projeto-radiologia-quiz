@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "@mui/material/Button"
+
 
 import "./home.css";
 
@@ -51,9 +53,9 @@ function Home() {
             </h1>
           </div>
 
-          <div className="btnStart">
+          <div className="center">
             <Link to="/escolha">
-            <button>COMEÇAR</button>
+              <Button variant="outlined" >Começar!</Button>
             </Link>
             
           </div>

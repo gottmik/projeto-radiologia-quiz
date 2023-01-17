@@ -1,0 +1,25 @@
+.SearchBox{
+  display: flex;
+  height: 55px;
+  
+
+}
+
+.S1{
+  width: 20%;  
+}
+
+.S2{
+  width: 100%;
+  height: 50px;
+  display:flex;
+  justify-content: center;
+  
+}
+
+.textfield{
+  width: 100%;
+}
+
+
+

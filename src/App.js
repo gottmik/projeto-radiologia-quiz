@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import "./App.css";
@@ -6,7 +6,6 @@ import "./App.css";
 
 import Modelidades from "./Components/modelidades.jsx";
 import Home from "./Components/home.jsx"
-import Anatomy from "./Components/Anatomy/anatomy.jsx"
 import AnatomyPage from "./Components/Anatomy/anatomypage";
 
 function App() {

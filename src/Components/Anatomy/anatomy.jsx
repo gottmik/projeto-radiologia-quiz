@@ -14,7 +14,12 @@ function Anatomy(props) {
     setIsOpen(!isOpen);
   };
 
+
+  
+
   return (
+    <>
+    
     <div className="anatomyComponent" key={props.dado.id}>
       <div className="anatomyHeader" onClick={onClickHeader}>
         <h2 className="anatomyName">{props.dado.name}</h2>
@@ -35,6 +40,7 @@ function Anatomy(props) {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

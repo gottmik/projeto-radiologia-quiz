@@ -63,14 +63,7 @@ body{
   right: 15px;
 }
 
-.triangulo-para-baixo {
-  
-  height: 15px; 
-  margin: 5px;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #fdfcfc;
-}
+
 
 img{
   width: 90%;
