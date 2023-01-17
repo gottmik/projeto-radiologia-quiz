@@ -3,6 +3,7 @@ import { Panoramica } from "../../data-panoramica";
 import Anatomy from "./anatomy";
 import "./anatomypage.css";
 import { TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const AnatomyPage = () => {
   const datas = Panoramica ?? []; // PUXANDO O ARRAY DO DATABASE
@@ -29,6 +30,12 @@ const AnatomyPage = () => {
         {dados.map((dado) => (
           <Anatomy dado={dado} />
         ))}
+      </div>
+      <div className="voltar">
+        <Link to="/">
+          <button className="voltarbutton" >Voltar</button>
+        
+        </Link>
       </div>
     </>
   );

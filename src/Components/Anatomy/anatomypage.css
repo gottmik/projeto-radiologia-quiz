@@ -1,8 +1,13 @@
 .SearchBox{
   display: flex;
-  height: 55px;
+  height: 7vh;
   
 
+}
+
+.anatomypage{
+  overflow: scroll;
+  height: 85vh;
 }
 
 .S1{
@@ -22,4 +27,21 @@
 }
 
 
+.voltar{
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(189, 188, 188);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.voltarbutton{
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  font-size: 2rem;
+  background-color: transparent;
+}

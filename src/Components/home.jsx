@@ -1,39 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "@mui/material/Button"
 
 
 import "./home.css";
 
-
-
 function Home() {
-  // const datas = Anatomias ?? []; // PUXANDO O ARRAY DO DATABASE
-  // // const [busca, setBusca] = useState('');
-
-  // const [dados, setDados] = useState(datas);
-
-  
-
-  // const getNameFromDatas = datas.map(valor => valor.name) ISSO PEGA O VALOR DA CHAVE NOME E RETORNA EM ARRAY
-
-  // const filterOnChange = (event) => {
-  //   let updatedList = [...datas];
-  //   let busca = event.target.value;
-  //   updatedList = updatedList.filter((item) => {
-  //     return item.name.toLowerCase().indexOf(busca.toLowerCase()) !== -1;
-  //   });
-  //   setDados(updatedList);
-  // };
-
-  // const titleRef = useRef();
-
-  // function scrollTo() {
-  //   titleRef.current.scrollIntoView();
-  // }
-
-
-
   return (
     <div className="dBody">
       <div className="FirstSection">
@@ -55,9 +26,8 @@ function Home() {
 
           <div className="center">
             <Link to="/escolha">
-              <Button variant="outlined" >Começar!</Button>
+              <button className="centerbutton">Começar!</button>
             </Link>
-            
           </div>
         </div>
       </div>

@@ -45,7 +45,14 @@ export default function Modelidades() {
             <h5 className="testess2">Click aqui</h5>
           </div>
         </Link>
+        
       </div>
+      <div className="voltarr">
+          <Link to="/">
+            <button className="voltarbuttonn" >Voltar</button>
+          
+          </Link>
+        </div>
     </>
   );
 }
