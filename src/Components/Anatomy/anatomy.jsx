@@ -28,7 +28,7 @@ function Anatomy(props) {
       </div>
       <div
         id={props.dado.id}
-        className={`${isOpen ? "anatomyContain-active" : "anatomyContain"}`}
+        className={`${isOpen ? "anatomyContain-active" : "anatomyContain" }`}
       >
         <div className="anatomyImage">
           <img src={props.dado.img} alt="Alguma imagem" />
