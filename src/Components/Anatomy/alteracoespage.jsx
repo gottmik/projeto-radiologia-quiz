@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { Panoramica } from "../../data-panoramica";
-import Anatomy from "./anatomy";
-import "./anatomypage.css";
+import { Alteracao } from "../../data-panoramica";
+
+import Tomografia from "./tomografia"
+import "./tomografiapage.css";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const AnatomyPage = () => {
-  const datas = Panoramica ?? []; // PUXANDO O ARRAY DO DATABASE
+const AlteracoesPage = () => {
+  const datas = Alteracao ?? []; // PUXANDO O ARRAY DO DATABASE
   // const [busca, setBusca] = useState('');
 
   const [dados, setDados] = useState(datas);
@@ -28,7 +29,7 @@ const AnatomyPage = () => {
 
       <div className="anatomypage">
         {dados.map((dado) => (
-          <Anatomy dado={dado} />
+          <Tomografia dado={dado} />
         ))}
       </div>
       <div className="voltar">
@@ -41,4 +42,4 @@ const AnatomyPage = () => {
   );
 };
 
-export default AnatomyPage;
+export default AlteracoesPage;

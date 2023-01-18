@@ -1,9 +1,9 @@
-import "./anatomy.css";
+import "./tomografia.css";
 import React from "react";
 import { useState } from "react";
 
 
-function Anatomy(props) {
+function Tomografia(props) {
 
   const [isOpen, setIsOpen] = useState(false);
   // dados.map(dado => {
@@ -44,4 +44,4 @@ function Anatomy(props) {
   );
 }
 
-export default Anatomy;
+export default Tomografia;

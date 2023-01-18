@@ -25,7 +25,7 @@ export const Panoramica = [
   },
   {
     id: 3,
-    name: "Espinha nasal inferior",
+    name: "Espinha Nasal Anterior",
     img: esp_nasal_inf,
     texto: "Formato de V, radiopaco, localizado proximo as raizes dos incisivos centrais",
     corte: "Panoramico",
@@ -33,7 +33,7 @@ export const Panoramica = [
   },
   {
     id: 4,
-    name: "Fissura pterigomaxilar",
+    name: "Fissura Pterigomaxilar",
     img: fissura_pterigomaxilar,
     texto: "Os nervos alveolares posterior e superior passam pela fissura pterigomandibular, que continua para a fossa infratemporal",
     corte: "Panoramico",
@@ -57,7 +57,7 @@ export const Panoramica = [
   }
 ];
 
-export const Tomografia = [
+export const Tomografias = [
   {
     id: 1,
     name: "Cigarro",
@@ -68,3 +68,13 @@ export const Tomografia = [
   }
 ]
   
+export const Alteracao = [
+  {
+    id: 1,
+    name: "Cigarro2",
+    img: angulo_da_mand,
+    texto: "Facil de identificar em qualquer corte e tomara radiologica",
+    corte: "Panoramica",
+    info: "Facil de identificar em qualquer corte e tomara radiologica",
+  }
+]

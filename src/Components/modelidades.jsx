@@ -10,7 +10,7 @@ export default function Modelidades() {
   return (
     <>
       <div className="thirdSectionHeader">
-        <h3>Comece o estudo por onde preferir</h3>
+        
       </div>
       <div className="thirdSection">
         <Link className="liink">
@@ -31,15 +31,15 @@ export default function Modelidades() {
               <h5 className="testess">Clique aqui</h5>
             </div>
           </Link>
-          <Link className="liink">
+          <Link className="liink" to="/">
             <div className="quadradinho quadradinho2">
               <h3>Anatomia em Periapical</h3>
               <h5 className="testess">Clique aqui</h5>
             </div>
           </Link>
         </div>
-        <Link className="liink">
-          <div className="retangulo">
+        <Link className="liink" to="/tomografiar">
+          <div className="retangulo" >
             <h2>Anatomia em TOMOGRAFIA</h2>
             <img src={l3d} alt="" />
             <h5 className="testess2">Click aqui</h5>
