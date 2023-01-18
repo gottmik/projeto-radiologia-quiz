@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Panoramica } from "../../data-panoramica";
 import Anatomy from "./anatomy";
-import "./anatomypage.css"
+
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
+import "./anatomypage.css"
 
 const AnatomyPage = () => {
   const datas = Panoramica ?? []; // PUXANDO O ARRAY DO DATABASE
