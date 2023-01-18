@@ -21,20 +21,20 @@ export default function Modelidades() {
               <img src={lesoes3} alt="" />
             </div>
             <h1>Lesões e Alterações Anatômicas.</h1>
-            <h5 className="testess2">Clique aqui</h5>
+            
           </div>
         </Link>
         <div className="quadradoSec">
           <Link className="liink" to="/panoramica">
             <div className="quadradinho quadradinho1">
               <h3>Anatomia em Panorâmica</h3>
-              <h5 className="testess">Clique aqui</h5>
+              
             </div>
           </Link>
           <Link className="liink" to="/">
             <div className="quadradinho quadradinho2">
               <h3>Anatomia em Periapical</h3>
-              <h5 className="testess">Clique aqui</h5>
+              
             </div>
           </Link>
         </div>
@@ -42,7 +42,7 @@ export default function Modelidades() {
           <div className="retangulo" >
             <h2>Anatomia em TOMOGRAFIA</h2>
             <img src={l3d} alt="" />
-            <h5 className="testess2">Click aqui</h5>
+            
           </div>
         </Link>
         

@@ -40,7 +40,11 @@
     background-color: transparent;
     border: 1;
     border: 0;
-    color: white;
+    color: rgba(40, 40, 40, 01);
+    color: #2a2929;
+
+    text-shadow: 4px 3px 0 #7A7A7A;
+    
 }
 
 .liink{

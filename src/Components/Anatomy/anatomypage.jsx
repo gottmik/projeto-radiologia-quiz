@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Panoramica } from "../../data-panoramica";
 import Anatomy from "./anatomy";
-import "./anatomypage.css";
+import "./anatomypage.css"
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -31,7 +31,7 @@ const AnatomyPage = () => {
           <Anatomy dado={dado} />
         ))}
       </div>
-      <div className="voltar">
+      <div className="voltarr">
         <Link to="/escolha">
           <button className="voltarbutton" >Voltar</button>
         
