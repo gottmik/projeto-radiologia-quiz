@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Panoramica } from "../../data-panoramica";
 import Anatomy from "./anatomy";
-
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./anatomypage.css"
@@ -23,18 +23,18 @@ const AnatomyPage = () => {
 
   return (
     <>
-      <div className="S2">
+      <div className="panoramicapesquisar">
         <TextField onChange={filterOnChange} className="textfield" id="filled-basic" label="Pesquise aqui" variant="filled" size="large"/>
       </div>
 
-      <div className="anatomypage">
+      <div className="panoramica">
         {dados.map((dado) => (
           <Anatomy dado={dado} />
         ))}
       </div>
-      <div className="voltarr">
+      <div className="PanoramicaVoltar">
         <Link to="/escolha">
-          <button className="voltarbutton" >Voltar</button>
+          <button className="voltarbutton" ><KeyboardBackspaceIcon fontSize="large"/></button>
         
         </Link>
       </div>

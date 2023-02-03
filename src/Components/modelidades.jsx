@@ -1,9 +1,7 @@
 import React from "react";
 import "./modelidades.css";
-import lesoes from "../Img/lesoes.png";
-import lesoes2 from "../Img/lesoes2.png";
-import lesoes3 from "../Img/lesoes3.png";
-import l3d from "../Img/3d.png";
+
+
 import { Link } from "react-router-dom";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
@@ -13,7 +11,7 @@ export default function Modelidades() {
       <div className="Principal">
         <div className="d1">
           <Link className="dd d1filho">
-            <div className="">Lesões e Alterações Anatômicas</div>
+            <div className="">Lesões e Alterações<br></br> Anatômicas</div>
           </Link>
         </div>
         <div className="d2">
@@ -26,7 +24,7 @@ export default function Modelidades() {
         </div>
         <div className="d3">
           <Link className="dd d3filho" to="/">
-            <div className="">Anatomia em Tomografia</div>
+            <div className="">Anatomia em <br></br> Tomografia</div>
           </Link>
         </div>
         <div className="d4">
