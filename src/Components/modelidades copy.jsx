@@ -12,29 +12,27 @@ export default function Modelidades() {
     <>
       <div className="Principal">
         <div className="d1">
-          <Link className="dd d1filho">
-            <div className="">Lesões e Alterações Anatômicas</div>
+          <Link className="liink">
+            <div className="dd d1filho">Lesões e Alterações Anatômicas</div>
           </Link>
         </div>
         <div className="d2">
-          <Link className="dd d2filho d2-0filho" to="/panoramica">
-            <div className="">Anatomia em Panorâmica</div>
+          <Link className="liink" to="/panoramica">
+            <div className="dd d2filho d2-0filho">Anatomia em Panorâmica</div>
           </Link>
-          <Link className="dd d2filho d2-1filho" to="/periapical">
-          <div className="">Anatomia em Periapical</div>
-          </Link>
+          <div className="dd d2filho d2-1filho">Anatomia em Periapical</div>
         </div>
         <div className="d3">
-          <Link className="dd d3filho" to="/">
-            <div className="">Anatomia em Tomografia</div>
+          <Link className="liink" to="/">
+            <div className="dd d3filho">Anatomia em Tomografia</div>
           </Link>
         </div>
         <div className="d4">
-          <Link className="dd d4-0filho" to="/">
-            <div className="">Legendas de Laudos</div>
+          <Link className="liink" to="/">
+            <div className="dd d4-0filho">Legendas de Laudos</div>
           </Link>
-          <Link className="dd d4-1filho" to="/">
-            <div className="">
+          <Link className="liink" to="/">
+            <div className="dd d4-1filho">
               <KeyboardBackspaceIcon fontSize="large" />
             </div>
           </Link>
