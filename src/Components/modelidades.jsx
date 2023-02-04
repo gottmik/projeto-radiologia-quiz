@@ -1,5 +1,6 @@
 import React from "react";
 import "./modelidades.css";
+import Mandibula from "../Img/mandibula.png"
 
 
 import { Link } from "react-router-dom";
@@ -25,6 +26,8 @@ export default function Modelidades() {
         <div className="d3">
           <Link className="dd d3filho" to="/">
             <div className="">Anatomia em <br></br> Tomografia</div>
+            <div><img className="mandibulaimg" src={Mandibula} alt="" />
+            </div>
           </Link>
         </div>
         <div className="d4">
