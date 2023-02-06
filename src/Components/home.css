@@ -39,7 +39,6 @@
 
  */
 
-
 /* CELULAR E TABLET */
 @media screen and (max-width: 768px) {
   .FirstSection {
@@ -74,48 +73,51 @@
   .PaddingP {
     padding: 20px;
     width: 100%;
-    height: 100%;
+    height: 88%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
   }
 
-  .F1{
+  .F1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
   }
 
-  .F2{
+  .F2 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.7rem;
-    flex-direction: column ;
+    flex-direction: column;
+    padding-top: 25%;
   }
 
-  .F2 h6{
+  .F2 h1 {
+    color: #110931;
+  }
+  .F2 h6 {
     text-align: center;
     padding: 1%;
   }
 
-  .center {
+  .F3 {
     text-align: center;
-    margin-bottom: 40px;
+    padding-bottom: 0px;
   }
 
   .centerbutton {
     color: #180847;
     border-color: black;
-    font-size: 1.8rem;
-    font-weight: 900;
+    font-size: 1.7rem;
+    font-weight: 400;
     background-color: transparent;
     border-radius: 3%;
     height: 8vh;
     width: 50vw;
-    border: 4px solid;
+    border: 2px solid;
   }
 }
 

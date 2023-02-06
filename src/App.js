@@ -9,6 +9,7 @@ import Home from "./Components/home.jsx"
 import AnatomyPage from "./Components/Anatomy/anatomypage";
 import TomografiaPage from "./Components/Anatomy/tomografiapage";
 import AlteracoesPage from "./Components/Anatomy/alteracoespage";
+import Legenda from "./Components/legenda";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/panoramica" element={<AnatomyPage/>}/>
         <Route path="/tomografiar" element={<TomografiaPage/>}/>
         <Route path="/alteracoes" element={<AlteracoesPage/>}/>
+        <Route path="/legenda" element={<Legenda/>}/>
         
         
     

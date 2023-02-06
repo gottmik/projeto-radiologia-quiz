@@ -11,7 +11,7 @@ export default function Modelidades() {
     <>
       <div className="Principal">
         <div className="d1">
-          <Link className="dd d1filho">
+          <Link className="dd d1filho" to="/lesoes">
             <div className="">Lesões e Alterações<br></br> Anatômicas</div>
           </Link>
         </div>
@@ -24,19 +24,26 @@ export default function Modelidades() {
           </Link>
         </div>
         <div className="d3">
-          <Link className="dd d3filho" to="/">
+          <Link className="dd d3filho" to="/tomografia">
             <div className="">Anatomia em <br></br> Tomografia</div>
             <div><img className="mandibulaimg" src={Mandibula} alt="" />
             </div>
           </Link>
         </div>
         <div className="d4">
-          <Link className="dd d4-0filho" to="/">
+          <Link className="dd d4-0filho" to="/legenda">
             <div className="">Legendas de Laudos</div>
           </Link>
           <Link className="dd d4-1filho" to="/">
             <div className="">
               <KeyboardBackspaceIcon fontSize="large" />
+            </div>
+          </Link>
+        </div>
+        <div className="d3">
+          <Link className="dd d3filho" to="/descricoes">
+            <div className="">Descrição de lesões <br></br> </div>
+            <div><img className="mandibulaimg" src={Mandibula} alt="" />
             </div>
           </Link>
         </div>

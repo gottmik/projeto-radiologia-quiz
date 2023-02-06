@@ -22,9 +22,9 @@ function Home() {
             <h6>Esse é o primeiro Web App gratuito voltado para Dentistas e Radiologistas. Aproveitem! </h6>
           </div>
 
-          <div className="center">
+          <div className="F3">
             <Link to="/escolha">
-              <button className="centerbutton">Começar!</button>
+              <button className="centerbutton">COMEÇAR</button>
             </Link>
           </div>
         </div>
