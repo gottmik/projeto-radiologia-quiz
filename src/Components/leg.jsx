@@ -9,7 +9,7 @@ export default function Leg(props) {
   const [userText, setUserText] = useState("")
 
   const handleUserTextChange = (e) => {
-    setUserText(text.replace("--", e.target.value))
+    setUserText(text.replace("__", e.target.value))
   }
 
   return (
