@@ -44,7 +44,7 @@ export default function Modelidades() {
             </div>
           </Link>
         </div>
-        <div className="d3">
+        <div className="d5">
           <Link className="dd d3filho" to="/descricoes">
             <div className="">Descrição de lesões <br></br> </div>
             <div>
