@@ -3,6 +3,8 @@ import "../Components/legenda.css";
 import { DataLegenda } from "../data-legendas";
 import Leg from "../Components/leg";
 import { TextField } from "@mui/material";
+import { Link } from "react-router-dom";
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
 export default function Legenda() {
   const datas = DataLegenda ?? []; // PUXANDO O ARRAY DO DATABASE
@@ -33,6 +35,15 @@ export default function Legenda() {
           {dados.map((dado) => (
             <Leg dado={dado} />
           ))}
+        </div>
+        <div className="voltar">
+          <div className="PanoramicaVoltar">
+            <Link to="/escolha">
+              <button className="voltarbutton">
+                <KeyboardBackspaceIcon fontSize="large" />
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
       <div></div>

@@ -26,6 +26,7 @@ export default function Leg(props) {
             <ContentCopyIcon className="botao"/>
           </CopyToClipBoard>
         </div>
+        
       </div>
     </div>
   );
