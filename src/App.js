@@ -25,7 +25,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/escolha" element={<Modelidades/>}/>
         <Route path="/panoramica" element={<AnatomyPage/>}/>
-        <Route path="/tomografiar" element={<TomografiaPage/>}/>
+        <Route path="/tomografia" element={<TomografiaPage/>}/>
         <Route path="/alteracoes" element={<AlteracoesPage/>}/>
         <Route path="/legenda" element={<Legenda/>}/>
         

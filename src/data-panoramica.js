@@ -39,6 +39,15 @@ export const Panoramica = [
     corte: "Panoramico",
     info:"",
   },
+  
+  {
+    id: 4,
+    name: "Fissura Pterigomaxilar",
+    img: fissura_pterigomaxilar,
+    texto: "Os nervos alveolares posterior e superior passam pela fissura pterigomandibular, que continua para a fossa infratemporal",
+    corte: "Panoramico",
+    info:"",
+  },
   {
     id: 5,
     name: "Fossa Mandibular",
@@ -65,7 +74,15 @@ export const Tomografias = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Panoramica",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-  }
+  },
+  {
+    id: 1,
+    name: "Patricia",
+    img: angulo_da_mand,
+    texto: "Facil de identificar em qualquer corte e tomara radiologica",
+    corte: "Panoramica",
+    info: "Facil de identificar em qualquer corte e tomara radiologica",
+  },
 ]
   
 export const Alteracao = [
