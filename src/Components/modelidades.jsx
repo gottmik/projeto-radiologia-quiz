@@ -10,6 +10,10 @@ export default function Modelidades() {
   return (
     <>
       <div className="Principal">
+        <div className="online">
+          <div className="btn-pisca"></div>
+          <div className="online2">Online</div>
+        </div>
         <div className="d1">
           <Link className="dd d1filho" to="/lesoes">
             <div className="">Lesões e Alterações<br></br> Anatômicas</div>
@@ -20,7 +24,7 @@ export default function Modelidades() {
             <div className="">Anatomia em Panorâmica</div>
           </Link>
           <Link className="dd d2filho d2-1filho" to="/periapical">
-          <div className="">Anatomia em Periapical</div>
+            <div className="">Anatomia em Periapical</div>
           </Link>
         </div>
         <div className="d3">
@@ -32,7 +36,7 @@ export default function Modelidades() {
         </div>
         <div className="d4">
           <Link className="dd d4-0filho" to="/legenda">
-            <div className="">Legendas de Laudos</div>
+            <div className="">Legendas para Laudos</div>
           </Link>
           <Link className="dd d4-1filho" to="/">
             <div className="">
@@ -40,10 +44,10 @@ export default function Modelidades() {
             </div>
           </Link>
         </div>
-        <div className="d3">
+        <div className="d5">
           <Link className="dd d3filho" to="/descricoes">
             <div className="">Descrição de lesões <br></br> </div>
-            <div><img className="mandibulaimg" src={Mandibula} alt="" />
+            <div>
             </div>
           </Link>
         </div>

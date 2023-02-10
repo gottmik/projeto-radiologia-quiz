@@ -11,7 +11,54 @@
   box-sizing: border-box;
   padding: 0;
 }
-.mandibulaimg{
+
+@keyframes btn-piscando {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.online {
+  font-weight: 600;
+  width: 100%;
+  padding-left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.online2 {
+  padding-left: 6px;
+}
+
+.btn-pisca {
+
+  background-color: #0bcf1c;
+  color: #fff;
+  width: 12px;
+  height: 12px;
+  border: solid 1px rgb(150, 150, 150);
+
+
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50%;
+  -webkit-animation: btn-piscando 1s linear infinite;
+  -moz-animation: btn-piscando 1s linear infinite;
+  -ms-animation: btn-piscando 3s linear infinite;
+  -o-animation: btn-piscando 3s linear infinite;
+  animation: btn-piscando 1s linear infinite;
+}
+
+.mandibulaimg {
   width: 4rem;
 }
 
@@ -22,45 +69,59 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background:#e3e3e3;
-  
-  font-size: 1.1rem;
+  background: #e3e3e3;
+
+
   font-weight: 900;
 }
 
-.d1 {
-  
-  width: 100%;
-  height: 30%;
-  padding: 7%;
+.online {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  font-size: .9rem;
 }
 
-.d1filho{
-  
-  background-image: url("../Img/lesoes2.png");
+.d1 {
+
+  width: 100%;
+  height: 30%;
+  padding: 0% 8% 6% 8%;
+  font-size: 1.4rem;
+
 }
+
+
 .d2 {
   width: 100%;
   height: 20%;
-  padding: 7%;
-  padding-top: 0 !important;
+  padding: 0% 8% 6% 8%;
+  
   display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+
 }
 
 .d3 {
   width: 100%;
   height: 20%;
-  padding: 7%;
-  padding-top: 0 !important;
-  
+  padding: 0% 8% 6% 8%;
+  font-size: 1.2rem;
+
+}
+.d5{
+  width: 100%;
+  height: 14%;
+  padding: 0% 8% 6% 8%;
+  font-size: 1.2rem;
 }
 
 .d4 {
   width: 100%;
-  height: 17%;
+  height: 14%;
   display: flex;
-  padding: 7%;
-  padding-top: 0 !important;
+  padding: 0% 8% 6% 8%;
+  font-size: 1.1rem;
 }
 
 /* ///////////////////////////////// */
@@ -70,9 +131,10 @@
   height: 100%;
   display: flex;
   justify-content: flex-start;
+
   align-items: center;
-  
-  
+
+
 }
 
 .d2-0filho {
@@ -126,13 +188,15 @@
 }
 
 .dd {
-    border-radius: 20px;
-    background: #e3e3e3;
-    box-shadow:  20px 20px 60px #c1c1c1,
-                 -20px -20px 60px #ffffff;
+  border-radius: 20px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
   padding: 9%;
   text-decoration: none;
   color: #180847;
+
   text-align: left;
 }
 
@@ -143,184 +207,3 @@
   height: 100%;
   text-decoration: none;
 }
-
-/* .thirdSection {
-  background: #e0e0e0;
-  box-shadow: 8px 8px 30px #bebebe, -8px -8px 30px #ffffff;
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  width: 100%;
-  height: 85vh;
-  padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.thirdSectionHeader {
-  background-color: rgba(40, 40, 40, 01);
-  height: 7vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 10px;
-  font-style: italic;
-  color: white;
-}
-
-.voltarr {
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(40, 40, 40, 01);
-}
-.voltarbuttonn {
-  text-decoration: none;
-  font-size: 2rem;
-  background-color: transparent;
-  border: 1;
-  border: 0;
-  color: rgba(40, 40, 40, 01);
-  color: #2a2929;
-
-  text-shadow: 4px 3px 0 #7a7a7a;
-}
-
-.liink {
-  text-decoration: none;
-  color: black;
-  width: 100%;
-  height: 100%;
-}
-
-.testess2 {
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-}
-
-.quadrado {
-  width: 100%;
-  height: 45%;
-
-  border-radius: 2.5rem;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  border-radius: 35px;
-  background: #e0e0e0;
-  box-shadow: 8px 8px 30px #bebebe, -8px -8px 30px #ffffff;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.thirdSectionHeader {
-  text-align: center;
-}
-
-.quadrado h1 {
-  padding: 20px;
-  padding-top: 0px;
-}
-
-.quadrado-img-div {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 20px;
-}
-
-.quadrado img {
-  align-items: center;
-  padding: 5px;
-  width: 23%;
-}
-
-.quadradoSec {
-  display: flex;
-
-  width: 100%;
-  height: 24%;
-}
-
-.quadradinho {
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.quadradinho1 {
-  width: 95%;
-  height: 90%;
-
-  border-radius: 2.5rem;
-  margin-right: 8px;
-  position: relative;
-  background: #e0e0e0;
-  box-shadow: 8px 8px 30px #bebebe, -8px -8px 30px #ffffff;
-}
-.BOXSVG {
-  position: absolute;
-  fill: none;
-  stroke: black;
-  stroke-width: 6;
-  margin: 10px;
-  stroke-dasharray: 190;
-  stroke-dashoffset: 190;
-}
-
-.BOXSVG:nth-child(1) {
-  stroke-dashoffset: 0;
-  stroke: rgb(102, 102, 102);
-}
-.BOXSVG:nth-child(2) {
-  stroke: rgb(49, 35, 245);
-  transition: stroke-dashoffset 0.8s;
-}
-
-.quadradinho2 {
-  width: 95%;
-  height: 90%;
-
-  border-radius: 2.5rem;
-  margin-left: 8px;
-  position: relative;
-  background: #e0e0e0;
-  box-shadow: 8px 8px 30px #bebebe, -8px -8px 30px #ffffff;
-}
-
-.retangulo {
-  width: 100%;
-  height: 25%;
-
-  border-radius: 2.5rem;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  align-items: center;
-  background: #e0e0e0;
-  box-shadow: 8px 8px 30px #bebebe, -8px -8px 30px #ffffff;
-}
-
-.retangulo h2,
-.retangulo h4 {
-  padding-left: 20px;
-}
-
-.retangulo img {
-  width: 29%;
-  padding-right: 20px;
-} */
