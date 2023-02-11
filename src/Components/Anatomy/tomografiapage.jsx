@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Tomografias } from "../../data-panoramica";
-
-import Tomografia from "./alteracoes"
-import "./tomografiapage.css";
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
+import Tomografia from "./tomografia"
+import "./modal.css";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -23,18 +23,18 @@ const TomografiaPage = () => {
 
   return (
     <>
-      <div className="S2">
+      <div className="panoramicapesquisar">
         <TextField onChange={filterOnChange} className="textfield" id="filled-basic" label="Pesquise aqui" variant="filled" size="large"/>
       </div>
 
-      <div className="anatomypage">
+      <div className="panoramica">
         {dados.map((dado) => (
           <Tomografia dado={dado} />
         ))}
       </div>
-      <div className="voltar">
+      <div className="PanoramicaVoltar">
         <Link to="/escolha">
-          <button className="voltarbutton" >Voltar</button>
+        <button className="voltarbutton" ><KeyboardBackspaceIcon fontSize="large"/></button>
         
         </Link>
       </div>

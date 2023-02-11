@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Alteracao } from "../../data-panoramica";
-
-import Tomografia from "./tomografia"
-import "./tomografiapage.css";
+import { Panoramica } from "../../data-panoramica";
+import Anatomy from "./panoramica";
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
+import "./modal.css"
 
-const AlteracoesPage = () => {
-  const datas = Alteracao ?? []; // PUXANDO O ARRAY DO DATABASE
+const AnatomyPage = () => {
+  const datas = Panoramica ?? []; // PUXANDO O ARRAY DO DATABASE
   // const [busca, setBusca] = useState('');
 
   const [dados, setDados] = useState(datas);
@@ -23,18 +23,18 @@ const AlteracoesPage = () => {
 
   return (
     <>
-      <div className="S2">
+      <div className="panoramicapesquisar">
         <TextField onChange={filterOnChange} className="textfield" id="filled-basic" label="Pesquise aqui" variant="filled" size="large"/>
       </div>
 
-      <div className="anatomypage">
+      <div className="panoramica">
         {dados.map((dado) => (
-          <Tomografia dado={dado} />
+          <Anatomy dado={dado} />
         ))}
       </div>
-      <div className="voltar">
+      <div className="PanoramicaVoltar">
         <Link to="/escolha">
-          <button className="voltarbutton" >Voltar</button>
+          <button className="voltarbutton" ><KeyboardBackspaceIcon fontSize="large"/></button>
         
         </Link>
       </div>
@@ -42,4 +42,4 @@ const AlteracoesPage = () => {
   );
 };
 
-export default AlteracoesPage;
+export default AnatomyPage;

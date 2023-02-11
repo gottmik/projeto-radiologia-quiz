@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import "./App.css";
+
 
 import Modelidades from "./Components/modelidades.jsx";
 import Home from "./Components/home.jsx";
-import AnatomyPage from "./Components/Anatomy/anatomypage";
+import PanoramicaPage from "./Components/Anatomy/panoramicapage";
 import TomografiaPage from "./Components/Anatomy/tomografiapage";
-import AlteracoesPage from "./Components/Anatomy/alteracoespage";
+
 import Legenda from "./Components/legenda";
 import Descricao from "./Components/descricao";
 
@@ -18,9 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/escolha" element={<Modelidades />} />
-          <Route path="/panoramica" element={<AnatomyPage />} />
+          <Route path="/panoramica" element={<PanoramicaPage />} />
           <Route path="/tomografia" element={<TomografiaPage />} />
-          <Route path="/alteracoes" element={<AlteracoesPage />} />
+          
           <Route path="/legenda" element={<Legenda />} />
           <Route path="/descricao" element={<Descricao />} />
         </Routes>

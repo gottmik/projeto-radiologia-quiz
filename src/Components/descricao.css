@@ -1,43 +1,74 @@
 .Container {
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.d-lesoes {
-  display: flex;
-  flex-direction: row;
 
-  justify-content: space-around;
+.paragrafo {
+  width: 80%;
+  height: 10vh;
+  background-color: rgb(238, 238, 238);
+  border-radius: 0% 1rem 0% 0%;
+}
+
+.Container-botoes {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.d-lesoes-filho {
-  display: flex;
-  flex-direction: row;
+.paragrafo p {
+  padding: 1%;
 }
+
+.Botoes-pai {
+  width: 100%;
+  display: flex;
+  padding: 4%;
+
+  align-items: center;
+}
+
+.buttonnn {
+  border: none;
+  padding: 4%;
+}
+.btn1 {
+  width: 50%;
+  text-align: right;
+  padding-right: 4%;
+}
+
+.btn2 {
+  width: 50%;
+  padding-left: 4%;
+  text-align: left;
+}
+
 .copiar {
   width: 80%;
   height: 30px;
-  background-color: red;
+  background-color: rgb(31, 10, 49);
   text-decoration: none;
   border: none;
-  border-radius: 1rem;
+  border-radius: .2rem;
   margin: 20px;
+  color: white;
 }
 
-.botoess{
-    display: flex;
-    width: 80%;
+.botoess {
+  display: flex;
+  width: 40%;
 }
 
-.buttonn {
-  display: block;
-  text-decoration: none;
-  border: none;
-  background-color: violet;
-  margin: 20px;
-  padding: 20px;
+.Botoex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
