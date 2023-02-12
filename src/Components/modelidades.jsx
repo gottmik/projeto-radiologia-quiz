@@ -14,7 +14,7 @@ export default function Modelidades() {
             <div className="online2">Online</div>
           </div>
           <div className="d1">
-            <Link className="dd d1filho" to="/lesoes">
+            <Link className="dd d1filho" to="/lesoesealteracoes">
               <div className="">
                 <label>Lesões e Alterações</label> Anatômicas
               </div>

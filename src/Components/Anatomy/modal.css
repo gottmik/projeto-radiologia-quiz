@@ -196,10 +196,18 @@ img {
   text-align: left;
   margin: auto 19px;
 }
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  text-transform: capitalize !important;
+}
 
 /* 
 /////////////////////////// */
 @media screen and (max-width: 599px) {
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    text-transform: capitalize!important;
+    
+  }
+
   .panoramica {
     overflow: scroll;
     width: 100%;

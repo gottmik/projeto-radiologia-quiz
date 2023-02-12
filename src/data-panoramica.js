@@ -85,7 +85,18 @@ export const Tomografias = [
   },
 ]
   
-export const Alteracao = [
+export const LesoeseAlteracoes = [
+  {
+    id: 1,
+    name: "Cigarro2",
+    img: angulo_da_mand,
+    texto: "Facil de identificar em qualquer corte e tomara radiologica",
+    corte: "Panoramica",
+    info: "Facil de identificar em qualquer corte e tomara radiologica",
+  }
+]
+
+export const Periapical = [
   {
     id: 1,
     name: "Cigarro2",
