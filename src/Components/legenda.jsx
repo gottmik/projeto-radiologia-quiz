@@ -21,32 +21,31 @@ export default function Legenda() {
   };
 
   return (
-    <div>
-      <div className="legendapesquisar">
-        <TextField
-          onChange={filterOnChange}
-          className="textfield"
-          id="filled-basic"
-          label="Pesquise aqui"
-          variant="filled"
-          size="large"
-        />
+    <div className="dBody">
+      <div className="PrimeiraSection">
+        <div className="legendapesquisar">
+          <TextField
+            onChange={filterOnChange}
+            className="textfield"
+            id="filled-basic"
+            label="Pesquise aqui"
+            variant="filled"
+            size="large"
+          />
+        </div>
         <div className="panoramica">
           {dados.map((dado) => (
             <Leg dado={dado} />
           ))}
         </div>
-        <div className="voltar">
-          <div className="PanoramicaVoltar">
-            <Link to="/escolha">
-              <button className="voltarbutton">
-                <KeyboardBackspaceIcon fontSize="large" />
-              </button>
-            </Link>
-          </div>
+        <div className="PanoramicaVoltar">
+          <Link to="/escolha">
+            <button className="voltarbutton">
+              <KeyboardBackspaceIcon fontSize="large" />
+            </button>
+          </Link>
         </div>
       </div>
-      <div></div>
     </div>
   );
 }

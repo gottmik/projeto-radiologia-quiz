@@ -7,7 +7,7 @@ import "./home.css";
 function Home() {
   return (
     <div className="dBody">
-      <div className="FirstSection">
+      <div className="PrimeiraSection">
         <div className="PaddingP">
           <div className="F1">
             <h6>

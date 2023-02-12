@@ -4,7 +4,7 @@ import Anatomy from "./panoramica";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
-import "./modal.css"
+import "./modal.css";
 
 const AnatomyPage = () => {
   const datas = Panoramica ?? []; // PUXANDO O ARRAY DO DATABASE
@@ -22,23 +22,33 @@ const AnatomyPage = () => {
   };
 
   return (
-    <>
-      <div className="panoramicapesquisar">
-        <TextField onChange={filterOnChange} className="textfield" id="filled-basic" label="Pesquise aqui" variant="filled" size="large"/>
-      </div>
+    <div className="dBody">
+      <div className="Container">
+        <div className="panoramicapesquisar">
+          <TextField
+            onChange={filterOnChange}
+            className="textfield"
+            id="filled-basic"
+            label="Pesquise aqui"
+            variant="filled"
+            size="large"
+          />
+        </div>
 
-      <div className="panoramica">
-        {dados.map((dado) => (
-          <Anatomy dado={dado} />
-        ))}
+        <div className="panoramica">
+          {dados.map((dado) => (
+            <Anatomy dado={dado} />
+          ))}
+        </div>
+        <div className="PanoramicaVoltar">
+          <Link to="/escolha">
+            <button className="voltarbutton">
+              <KeyboardBackspaceIcon fontSize="large" />
+            </button>
+          </Link>
+        </div>
       </div>
-      <div className="PanoramicaVoltar">
-        <Link to="/escolha">
-          <button className="voltarbutton" ><KeyboardBackspaceIcon fontSize="large"/></button>
-        
-        </Link>
-      </div>
-    </>
+    </div>
   );
 };
 

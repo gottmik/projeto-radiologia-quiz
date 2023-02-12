@@ -1,6 +1,6 @@
 .Container {
-  width: 100vw;
-  height: 92vh;
+  width: 650px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
 .paragrafo {
   width: 80%;
   height: 10vh;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(255, 255, 255);
   border-radius: 0% 1rem 0% 0%;
 }
 
@@ -37,6 +37,8 @@
 .buttonnn {
   border: none;
   padding: 4%;
+  font-size: 1rem;
+  background-color: white;
 }
 .btn1 {
   width: 50%;
@@ -71,4 +73,83 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+
+@media screen and (max-width: 599px){
+.Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragrafo {
+  width: 80%;
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0% 1rem 0% 0%;
+}
+
+.Container-botoes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragrafo p {
+  padding: 1%;
+}
+
+.Botoes-pai {
+  width: 100%;
+  display: flex;
+  padding: 4%;
+
+  align-items: center;
+}
+
+.buttonnn {
+  border: none;
+  padding: 4%;
+  background-color: rgb(255, 255, 255);
+}
+.btn1 {
+  width: 50%;
+  text-align: right;
+  padding-right: 4%;
+}
+
+.btn2 {
+  width: 50%;
+  padding-left: 4%;
+  text-align: left;
+}
+
+.copiar {
+  width: 80%;
+  height: 30px;
+  background-color: rgb(31, 10, 49);
+  text-decoration: none;
+  border: none;
+  border-radius: .2rem;
+  margin: 20px;
+  color: white;
+}
+
+.botoess {
+  display: flex;
+  width: 40%;
+}
+
+.Botoex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 }

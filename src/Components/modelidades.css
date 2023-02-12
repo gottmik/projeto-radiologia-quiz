@@ -36,17 +36,15 @@
 }
 
 .online2 {
-  padding-left: 6px;
+  padding-left: 1%;
 }
 
 .btn-pisca {
-
   background-color: #0bcf1c;
   color: #fff;
   width: 12px;
   height: 12px;
   border: solid 1px rgb(150, 150, 150);
-
 
   display: inline-block;
   text-decoration: none;
@@ -66,62 +64,61 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  background: #e3e3e3;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
 
 
-  font-weight: 900;
+ 
+  font-weight: 700;
 }
 
 .online {
   padding-top: 4%;
   padding-bottom: 2%;
-  font-size: .9rem;
+  font-size: 0.6rem;
 }
 
 .d1 {
-
   width: 100%;
-  height: 30%;
-  padding: 0% 8% 6% 8%;
-  font-size: 1.1rem;
-
+  height: 25%;
+  padding: 0% 6% 3% 6%;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
-
 
 .d2 {
   width: 100%;
-  height: 14%;
-  padding: 0% 8% 6% 8%;
-  
-  display: flex;
-  justify-content: space-around;
-  font-size: 0.7rem;
+  height: 18%;
+  padding: 0% 6% 3% 6%;
 
+  display: flex;
+  font-size: .9rem;
+  font-weight: 400;
 }
 
 .d3 {
   width: 100%;
   height: 16%;
-  padding: 0% 8% 6% 8%;
-  font-size: 1.0rem;
-
+  padding: 0% 6% 3% 6%;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
-.d5{
+.d5 {
   width: 100%;
   height: 14%;
-  padding: 0% 8% 10% 8%;
+  padding: 0% 6% 3% 6%;
   font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .d4 {
   width: 100%;
   height: 14%;
   display: flex;
-  padding: 0% 8% 6% 8%;
+  padding: 0% 6% 3% 6%;
   font-size: 1.1rem;
+  font-weight: 400;
 }
 
 /* ///////////////////////////////// */
@@ -133,17 +130,14 @@
   justify-content: flex-start;
 
   align-items: center;
-
-
 }
 
 .d2-0filho {
   width: 100%;
   height: 100%;
 
-  margin-right: 3%;
+  margin-right: 1.5%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -151,9 +145,8 @@
   width: 100%;
   height: 100%;
 
-  margin-left: 3%;
+  margin-left: 1.5%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -169,7 +162,7 @@
   width: 70%;
   height: 100%;
 
-  margin-right: 3%;
+  margin-right: 1.5%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -181,23 +174,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 3%;
+  margin-left: 1.5%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .dd {
-  border-radius: .3rem;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-    7px 7px 20px 0px rgba(0, 0, 0, .1),
-    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  background-color: rgb(255, 255, 255);
+  
   outline: none;
-  padding: 9%;
   text-decoration: none;
-  color: #180847;
-
-  text-align: left;
+  color: #251a47;
+  justify-content: flex-start;
+  padding-left: 8%;
+  padding-right: 4%;
+  border-radius: 1rem;
 }
 
 .liink {
@@ -206,4 +198,235 @@
   width: 100%;
   height: 100%;
   text-decoration: none;
+}
+
+.voltarespecial {
+  background-color: rgba(255, 255, 255, 0.981);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  color: #251a47;
+}
+
+label{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.labeel{
+  font-size: 1.2rem!important;
+}
+
+@media screen and (max-width: 599px){
+
+@keyframes btn-piscando {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.online {
+  font-weight: 600;
+  width: 100%;
+  padding-left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.online2 {
+  padding-left: 1%;
+}
+
+.btn-pisca {
+  background-color: #0bcf1c;
+  color: #fff;
+  width: 12px;
+  height: 12px;
+  border: solid 1px rgb(150, 150, 150);
+
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50%;
+  -webkit-animation: btn-piscando 1s linear infinite;
+  -moz-animation: btn-piscando 1s linear infinite;
+  -ms-animation: btn-piscando 3s linear infinite;
+  -o-animation: btn-piscando 3s linear infinite;
+  animation: btn-piscando 1s linear infinite;
+}
+
+.mandibulaimg {
+  width: 4rem;
+}
+
+.Principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background: #eae9e9c4;
+
+ 
+  font-weight: 700;
+}
+
+.online {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  font-size: 0.6rem;
+}
+
+.d1 {
+  width: 100%;
+  height: 25%;
+  padding: 0% 6% 3% 6%;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.d2 {
+  width: 100%;
+  height: 18%;
+  padding: 0% 6% 3% 6%;
+
+  display: flex;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.d3 {
+  width: 100%;
+  height: 16%;
+  padding: 0% 6% 3% 6%;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.d5 {
+  width: 100%;
+  height: 14%;
+  padding: 0% 6% 3% 6%;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.d4 {
+  width: 100%;
+  height: 14%;
+  display: flex;
+  padding: 0% 6% 3% 6%;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* ///////////////////////////////// */
+
+.d1filho {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+  align-items: center;
+}
+
+.d2-0filho {
+  width: 100%;
+  height: 100%;
+
+  margin-right: 1.5%;
+  display: flex;
+  align-items: center;
+}
+
+.d2-1filho {
+  width: 100%;
+  height: 100%;
+
+  margin-left: 1.5%;
+  display: flex;
+  align-items: center;
+}
+
+.d3filho {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d4-0filho {
+  width: 70%;
+  height: 100%;
+
+  margin-right: 1.5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.d4-1filho {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dd {
+  background-color: rgb(255, 255, 255);
+  
+  outline: none;
+  text-decoration: none;
+  color: #251a47;
+  justify-content: flex-start;
+  padding-left: 8%;
+  padding-right: 4%;
+  border-radius: 1rem;
+}
+
+.liink {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.voltarespecial {
+  background-color: rgba(255, 255, 255, 0.981);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  color: #251a47;
+}
+
+label{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.labeel{
+  font-size: 1.2rem!important;
+}
 }

@@ -9,7 +9,7 @@ import Imagem_fantasma_do_Palato_duro from "./Img/Imagem_fantasma_do_Palato_duro
 export const Panoramica = [
   {
     id: 1,
-    name: "Angulo da Manbibula",
+    name: "Ângulo da Mandíbula",
     img: angulo_da_mand,
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Panoramica",

@@ -6,26 +6,146 @@
   src: url(..//fonts/DMSans-Medium.ttf);
 }
 
+body{
+  margin: 0 auto;
+}
+
+.PrimeiraSection {
+  background: #ffffffc7;
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #180847;
+  height: 100vh;
+  width: 650px;
+}
+
+.FirstSection {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #180847;
+}
+
+.PaddingP {
+  padding: 20px;
+  width: 100%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.F1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.F1 h6 {
+  font-weight: 300 !important;
+}
+
+.F2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  flex-direction: column;
+  padding-top: 25%;
+}
+
+.F2 h1 {
+  color: #110931;
+}
+.F2 h6 {
+  text-align: center;
+  padding: 1%;
+  font-weight: 300 !important;
+}
+
+.F3 {
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+.centerbutton {
+  color: #180847;
+  background-color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0% 8% 0% 8%;
+  border-radius: 3%;
+  border: none;
+  height: 8vh;
+  width: inherit;
+}
+
+
+.icone-lupa {
+border: #29042a;
+margin: auto;
+height: 100%;
+}
+
+.icone-input input {
+width: 100%;
+height: 80%;
+background-color: transparent;
+border: 0;
+outline: 0;
+color: white;
+font-size: 1.2rem;
+}
+
+.icone-input {
+width: 100%;
+height: 100%;
+background-color: #29042a;
+border: 0.1px solid #29042a;
+border-radius: 0.2rem;
+}
+
+.Searching {
+display: flex;
+justify-content: center;
+height: 50px;
+width: 80%;
+border: 6px #29042a solid;
+margin: 0 auto;
+border-radius: 1rem;
+}
+
+.Searching span {
+margin: 5px 10px;
+font-size: 2.5rem;
+color: #faf7fa;
+}
+
+.SecondSection {
+height: 100vh;
+background-color: #29042ab5;
+padding: 5px;
+padding-top: 40px;
+}
+
 
 /* CELULAR E TABLET */
-@media screen and (max-width: 768px) {
-  .FirstSection {
-    background: #dadada;
+@media screen and (max-width: 599px) {
+  .PrimeiraSection {
+    background: #ffffffd1;
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: #180847;
     height: 100vh;
-  }
-
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
   }
 
   .FirstSection {
@@ -53,6 +173,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  .F1 h6 {
+    font-weight: 300 !important;
+  }
 
   .F2 {
     display: flex;
@@ -69,6 +192,7 @@
   .F2 h6 {
     text-align: center;
     padding: 1%;
+    font-weight: 300 !important;
   }
 
   .F3 {
@@ -78,14 +202,14 @@
 
   .centerbutton {
     color: #180847;
-    border-color: black;
-    font-size: 1.7rem;
+    background-color: white;
+    font-size: 1.4rem;
     font-weight: 400;
-    background-color: transparent;
+    padding: 0% 8% 0% 8%;
     border-radius: 3%;
+    border: none;
     height: 8vh;
-    width: 50vw;
-    border: 2px solid;
+    width: inherit;
   }
 }
 
