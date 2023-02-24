@@ -22,10 +22,11 @@ const PeriapicalPage = () => {
   };
 
   return (
-    <div className="dBody">
+    <div className="dBody" >
       <div className="Container">
         <div className="panoramicapesquisar">
           <TextField
+          
             onChange={filterOnChange}
             className="textfield"
             id="filled-basic"

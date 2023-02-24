@@ -5,9 +5,7 @@ import { Button, Modal, Box, Typography } from "@mui/material";
 
 function Periapical(props) {
   const [isOpen, setIsOpen] = useState(false);
-  // dados.map(dado => {
-  //   setIsOpen({...isOpen, [dado.id]: false})
-  // })
+ 
 
   const onClickHeader = () => {
     setIsOpen(!isOpen);
@@ -28,6 +26,8 @@ function Periapical(props) {
     p: 4,
   };
 
+
+
   return (
     <>
       <div className="anatomyComponent" key={props.dado.id}>
@@ -42,7 +42,7 @@ function Periapical(props) {
             aria-describedby="modal-modal-description"
           >
             <Box sx={style}>
-              <div className="img-modal">
+              <div  className="img-modal">
                 <img src={props.dado.img} alt="Alguma imagem" />
               </div>
               <Typography id="modal-modal-title" variant="h6" component="h2">
