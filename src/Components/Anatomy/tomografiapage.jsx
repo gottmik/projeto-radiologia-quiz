@@ -37,7 +37,7 @@ const TomografiaPage = () => {
 
         <div className="panoramica">
           {dados.map((dado) => (
-            <Tomografia dado={dado} />
+            <Tomografia dado={dado} key={dado.id} />
           ))}
         </div>
         <div className="PanoramicaVoltar">

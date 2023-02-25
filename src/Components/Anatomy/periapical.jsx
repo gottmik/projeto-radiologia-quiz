@@ -5,7 +5,6 @@ import { Button, Modal, Box, Typography } from "@mui/material";
 
 function Periapical(props) {
   const [isOpen, setIsOpen] = useState(false);
- 
 
   const onClickHeader = () => {
     setIsOpen(!isOpen);
@@ -26,7 +25,11 @@ function Periapical(props) {
     p: 4,
   };
 
+  let [state, setState] = useState(false);
 
+  const mudarEstado = () => {
+    setState(!false);
+  };
 
   return (
     <>
@@ -42,14 +45,19 @@ function Periapical(props) {
             aria-describedby="modal-modal-description"
           >
             <Box sx={style}>
-              <div  className="img-modal">
-                <img src={props.dado.img} alt="Alguma imagem" />
+              <div className="img-modal">
+                <img
+                  onClick={mudarEstado}
+                  src={state ? props.dado.imgg : props.dado.img}
+                  alt="Alguma imagem"
+                />
               </div>
+
               <Typography id="modal-modal-title" variant="h6" component="h2">
                 {props.dado.name}
               </Typography>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              {props.dado.texto}
+                {props.dado.texto}
               </Typography>
             </Box>
           </Modal>

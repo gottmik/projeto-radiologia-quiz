@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { Button, Modal, Box, Typography } from "@mui/material";
 
-function Tomografia(props) {
+function Panoramica(props) {
   const [isOpen, setIsOpen] = useState(false);
   // dados.map(dado => {
   //   setIsOpen({...isOpen, [dado.id]: false})
@@ -59,4 +59,4 @@ function Tomografia(props) {
   );
 }
 
-export default Tomografia;
+export default Panoramica;

@@ -28,6 +28,12 @@ function Tomografia(props) {
     p: 4,
   };
 
+  let [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNextImage = () => {
+    setCurrentIndex((currentIndex + 1) % props.dado.corte.length && (currentIndex + 1) % props.dado.img.length);
+  };
+
   return (
     <>
       <div className="anatomyComponent" key={props.dado.id}>
@@ -42,14 +48,19 @@ function Tomografia(props) {
             aria-describedby="modal-modal-description"
           >
             <Box sx={style}>
+              <div className="botaoPlanoDiv">
+                <button className="botaoPlano" onClick={handleNextImage}>
+                  {props.dado.corte[currentIndex]}
+                </button>
+              </div>
               <div className="img-modal">
-                <img src={props.dado.img} alt="Alguma imagem" />
+                <img src={props.dado.img[currentIndex]} alt="Alguma imagem" />
               </div>
               <Typography id="modal-modal-title" variant="h6" component="h2">
                 {props.dado.name}
               </Typography>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              {props.dado.texto}
+                {props.dado.texto}
               </Typography>
             </Box>
           </Modal>

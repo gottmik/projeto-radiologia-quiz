@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Panoramica } from "../../data-panoramica";
-import Anatomy from "./panoramica";
+import { PanoramicaDados } from "../../data-panoramica";
+import Panoramica from "./panoramica";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./modal.css";
 
 const AnatomyPage = () => {
-  const datas = Panoramica ?? []; // PUXANDO O ARRAY DO DATABASE
+  const datas = PanoramicaDados ?? []; // PUXANDO O ARRAY DO DATABASE
   // const [busca, setBusca] = useState('');
 
   const [dados, setDados] = useState(datas);
@@ -37,7 +37,7 @@ const AnatomyPage = () => {
 
         <div className="panoramica">
           {dados.map((dado) => (
-            <Anatomy dado={dado} />
+            <Panoramica dado={dado} key={dado.id} />
           ))}
         </div>
         <div className="PanoramicaVoltar">

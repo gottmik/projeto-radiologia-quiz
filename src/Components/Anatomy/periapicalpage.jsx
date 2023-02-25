@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Periapical } from "../../data-panoramica";
-import Anatomy from "./panoramica";
+import { PeriapicalDados } from "../../data-panoramica";
+import Periapical from "./periapical";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./modal.css";
 
 const PeriapicalPage = () => {
-  const datas = Periapical ?? []; // PUXANDO O ARRAY DO DATABASE
+  const datas = PeriapicalDados ?? []; // PUXANDO O ARRAY DO DATABASE
   // const [busca, setBusca] = useState('');
 
   const [dados, setDados] = useState(datas);
@@ -38,7 +38,7 @@ const PeriapicalPage = () => {
 
         <div className="panoramica">
           {dados.map((dado) => (
-            <Anatomy dado={dado} />
+            <Periapical dado={dado} key={dado.id}/>
           ))}
         </div>
         <div className="PanoramicaVoltar">

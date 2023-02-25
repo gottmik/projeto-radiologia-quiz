@@ -37,7 +37,7 @@ const LesoeseAlteracoesPage = () => {
 
         <div className="panoramica">
           {dados.map((dado) => (
-            <Anatomy dado={dado} />
+            <Anatomy dado={dado} key={dado.id} />
           ))}
         </div>
         <div className="PanoramicaVoltar">

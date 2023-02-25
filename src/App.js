@@ -24,7 +24,6 @@ function App() {
           <Route path="/tomografia" element={<TomografiaPage />} />
           <Route path="/lesoesealteracoes" element={<LesoeseAlteracoes />} />
           <Route path="/periapical" element={<Periapical />} />
-          
           <Route path="/legenda" element={<Legenda />} />
           <Route path="/descricao" element={<Descricao />} />
         </Routes>
