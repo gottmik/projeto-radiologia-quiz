@@ -6,7 +6,7 @@ import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./modal.css";
 
-const AnatomyPage = () => {
+const PanoramicaPage = () => {
   const datas = PanoramicaDados ?? []; // PUXANDO O ARRAY DO DATABASE
   // const [busca, setBusca] = useState('');
 
@@ -52,4 +52,4 @@ const AnatomyPage = () => {
   );
 };
 
-export default AnatomyPage;
+export default PanoramicaPage;

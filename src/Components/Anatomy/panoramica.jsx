@@ -5,9 +5,6 @@ import { Button, Modal, Box, Typography } from "@mui/material";
 
 function Panoramica(props) {
   const [isOpen, setIsOpen] = useState(false);
-  // dados.map(dado => {
-  //   setIsOpen({...isOpen, [dado.id]: false})
-  // })
 
   const onClickHeader = () => {
     setIsOpen(!isOpen);
@@ -28,6 +25,12 @@ function Panoramica(props) {
     p: 4,
   };
 
+  let [state, setState] = useState(false);
+
+  const mudarEstado = () => {
+    setState(!false);
+  };
+
   return (
     <>
       <div className="anatomyComponent" key={props.dado.id}>
@@ -43,13 +46,18 @@ function Panoramica(props) {
           >
             <Box sx={style}>
               <div className="img-modal">
-                <img src={props.dado.img} alt="Alguma imagem" />
+                <img
+                  onClick={mudarEstado}
+                  src={state ? props.dado.imgg : props.dado.img}
+                  alt="Alguma imagem"
+                />
               </div>
+
               <Typography id="modal-modal-title" variant="h6" component="h2">
                 {props.dado.name}
               </Typography>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              {props.dado.texto}
+                {props.dado.texto}
               </Typography>
             </Box>
           </Modal>
