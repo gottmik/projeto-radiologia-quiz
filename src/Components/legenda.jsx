@@ -8,6 +8,7 @@ import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import PropTypes from "prop-types";
 import Tab from "@mui/material/Tab";
 
+
 import Tabs from "@mui/material/Tabs";
 import { Box } from "@mui/material";
 
@@ -83,49 +84,61 @@ export default function Legenda() {
               <Tabs
                 value={value}
                 onChange={handleChange}
-                aria-label="basic tabs example"
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="scrollable auto tabs example"
               >
-                <Tab label="TM" {...a11yProps(0)} />
-                <Tab label="CD" {...a11yProps(1)} />
-                <Tab label="P/I" {...a11yProps(2)} />
-                <Tab label="ES" {...a11yProps(3)} />
-                <Tab label="AD" {...a11yProps(4)} />
+                <Tab label="Terceiros Molares" {...a11yProps(0)} />
+                <Tab label="Coroas Dentarias" {...a11yProps(1)} />
+                <Tab label="Periápice / Implante" {...a11yProps(2)} />
+                <Tab label="Estruturas de Suporte" {...a11yProps(3)} />
+                <Tab label="Anomalias Dentárias" {...a11yProps(4)} />
               </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-              {dados.filter((dado) => {
-                return dado.subtipo === "Terceiros Molares";
-              }).map(dado => (
-                <Leg dado={dado}/>
-              ))}
+              {dados
+                .filter((dado) => {
+                  return dado.subtipo === "Terceiros Molares";
+                })
+                .map((dado) => (
+                  <Leg dado={dado} />
+                ))}
             </TabPanel>
             <TabPanel value={value} index={1}>
-            {dados.filter((dado) => {
-                return dado.subtipo === "Coroas dentarias";
-              }).map(dado => (
-                <Leg dado={dado}/>
-              ))}
+              {dados
+                .filter((dado) => {
+                  return dado.subtipo === "Coroas dentarias";
+                })
+                .map((dado) => (
+                  <Leg dado={dado} />
+                ))}
             </TabPanel>
             <TabPanel value={value} index={2}>
-            {dados.filter((dado) => {
-                return dado.subtipo === "Periapice-Implante";
-              }).map(dado => (
-                <Leg dado={dado}/>
-              ))}
+              {dados
+                .filter((dado) => {
+                  return dado.subtipo === "Periapice-Implante";
+                })
+                .map((dado) => (
+                  <Leg dado={dado} />
+                ))}
             </TabPanel>
             <TabPanel value={value} index={3}>
-            {dados.filter((dado) => {
-                return dado.subtipo === "Periapice-Implante";
-              }).map(dado => (
-                <Leg dado={dado}/>
-              ))}
+              {dados
+                .filter((dado) => {
+                  return dado.subtipo === "Periapice-Implante";
+                })
+                .map((dado) => (
+                  <Leg dado={dado} />
+                ))}
             </TabPanel>
             <TabPanel value={value} index={4}>
-            {dados.filter((dado) => {
-                return dado.subtipo === "Periapice-Implante";
-              }).map(dado => (
-                <Leg dado={dado}/>
-              ))}
+              {dados
+                .filter((dado) => {
+                  return dado.subtipo === "Periapice-Implante";
+                })
+                .map((dado) => (
+                  <Leg dado={dado} />
+                ))}
             </TabPanel>
           </Box>
           {/* 

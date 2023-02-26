@@ -2,7 +2,12 @@ export const DataLegenda = [
   {
     key: "1",
     subtipo: "Terceiros Molares",
-    frase: `Notar dente __ que apresenta-se incluso / semi-incluso, em posição mesioangular e impactado.`,
+    frase: `Notar dente __ que apresenta-se incluso, em posição mesioangular e impactado.`,
+  },
+  {
+    key: "1.1",
+    subtipo: "Terceiros Molares",
+    frase: `Notar dente __ que apresenta-se semi-incluso, em posição mesioangular e impactado.`,
   },
   {
     key: "2",

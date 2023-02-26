@@ -1,9 +1,41 @@
-import angulo_da_mand from "./Img/Angulo_da_mandibula.jfif";
-import base_da_mand from "./Img/Base_da_mandibula.jfif";
-import esp_nasal_inf from "./Img/Espinha_nasal_inferior.jfif";
-import fissura_pterigomaxilar from "./Img/Fissura_pterigomaxilar.jfif";
-import Fossa_Mandibular from "./Img/Fossa Mandibular.jfif";
-import Imagem_fantasma_do_Palato_duro from "./Img/Imagem_fantasma_do_Palato_duro.jfif";
+///PANORAMICAS
+import angulodamandibula from "./Img/angulodamandibula.jpeg";
+import angulodamandibulaa from "./Img/angulodamandibulaa.jpg";
+import basedamandibula from "./Img/basedamandibula.jpg";
+import basedamandibulaa from "./Img/basedamandibulaa.jpg";
+import imagemfantasmapd from "./Img/imagemfantasmapd.jpeg";
+import imagemfantasmapdd from "./Img/imagemfantasmapdd.jpg";
+import fissurapterigomaxilar from "./Img/fissurapterigomaxilar.jpeg";
+import fissurapterigomaxilarr from "./Img/fissurapterigomaxilarr.jpg";
+import palatoduro from "./Img/palatoduro.jpeg";
+import palatoduroo from "./Img/palatoduroo.jpg";
+import arcozigomatico from "./Img/arcozigomatico.jpeg"
+import arcozigomaticoo from "./Img/arcozigomaticoo.jpg"
+import canalmandibular from "./Img/canalmandibular.jpeg"
+import canalmandibularr from "./Img/canalmandibularr.jpg"
+import conchainferior from "./Img/conchainferior.jpeg"
+import conchainferiorr from "./Img/conchainferiorr.jpg"
+import espinhanasalanterior from "./Img/espinhanasalanterior.jpeg"
+import espinhanasalanteriorr from "./Img/espinhanasalanteriorr.jpg"
+import extensaoalveolardoseiomaxilar from "./Img/extensaoalveolardoseiomaxilar.jpeg"
+import extensaoalveolardoseiomaxilarr from "./Img/extensaoalveolardoseiomaxilarr.jpg"
+import foramemandibular from "./Img/foramemandibular.jpeg"
+import foramemandibularr from "./Img/foramemandibularr.jpg"
+import foramementoniano from "./Img/foramementoniano.jpeg"
+import foramementonianoo from "./Img/foramementonianoo.jpg"
+import fossamandibular from "./Img/fossamandibular.jpeg"
+import fossamandibularr from "./Img/fossamandibularr.jpg"
+import ossohioide from "./Img/ossohioide.jpeg"
+import ossohioidee from "./Img/ossohioidee.jpg"
+import ossozigomatico from "./Img/ossozigomatico.jpeg"
+import ossozigomaticoo from "./Img/ossozigomaticoo.jpg"
+import processocoronoide from "./Img/processocoronoide.jpeg"
+import processocoronoidee from "./Img/processocoronoidee.jpg"
+
+
+
+
+///PERIAPICAL
 import septonasall from "./Img/septonasall.jpg";
 import septonasal from "./Img/septonasal.jpg";
 import arcozigomaticomolar from "./Img/arcozigomaticomolar.jpg";
@@ -14,10 +46,35 @@ import assoalhodoseiomaxilar from "./Img/assoalhodoseiomaxilar.jpg";
 import assoalhodoseiomaxilarr from "./Img/assoalhodoseiomaxilarr.jpg";
 import conchanasalinferior from "./Img/conchanasalinferior.jpg";
 import conchanasalinferiorr from "./Img/conchanasalinferiorr.jpg";
-import espinhanasalanterior from "./Img/espinhanasalanterior.jpg";
-import espinhanasalanteriorr from "./Img/espinhanasalanteriorr.jpg";
+import espinhanasalanteriorperiapical from "./Img/espinhanasalanteriorperiapical.jpg";
+import espinhanasalanteriorrperiapical from "./Img/espinhanasalanteriorrperiapical.jpg";
 import extensaoalveolardoseiomolar from "./Img/extensaoalveolardoseiomolar.jpg";
 import extensaoalveolardoseiomolarr from "./Img/extensaoalveolardoseiomolarr.jpg";
+
+//TOMOGRAFIAS
+// import processocoronoidedamandibulaaxiall from "./Img/processocoronoidedamandibulaaxiall.jpg";
+// import processocoronoidedamandibulacoronall from "./Img/processocoronoidedamandibulacoronall.jpg";
+// import processocoronoidedamandibulasagitall from "./Img/processocoronoidedamandibulasagitall.jpg";
+// import ossohioideaxiall from "./Img/ossohioideaxiall.jpg";
+// import ossohioidecoronall from "./Img/ossohioidecoronall.jpg";
+// import ossohioidesagitall from "./Img/ossohioidesagitall.jpg";
+// import forameincisicosagitall from "./Img/forameincisicosagitall.jpg";
+// import forameincisivoaxiall from "./Img/forameincisivoaxiall.jpg";
+// import forameincisivocoronall from "./Img/forameincisivocoronall.jpg";
+// import eminenciaarticularaxiall from "./Img/eminenciaarticularaxiall.jpg";
+// import eminenciaarticularcoronall from "./Img/eminenciaarticularcoronall.jpg";
+// import eminenciaarticularsagitall from "./Img/eminenciaarticularsagitall.jpg";
+// import espinhanasalanterioraxiall from "./Img/espinhanasalanterioraxiall.jpg";
+// import espinhanasalanteriorsagitall from "./Img/espinhanasalanteriorsagitall.jpg";
+// import conchasnasaismediaaxiall from "./Img/conchasnasaismediaaxiall.jpg";
+// import conchasnasaismediacoronall from "./Img/conchasnasaismediacoronall.jpg";
+// import conchasnasaismediasagitall from "./Img/conchasnasaismediasagitall.jpg";
+// import celulasdomastoidecoronall from "./Img/celulasdomastoidecoronall.jpg";
+// import celulasdomastoidee from "./Img/celulasdomastoidee.jpg";
+// import celulasdomastoidesagitall from "./Img/celulasdomastoidesagitall.jpg";
+// import arcozigomaticoaxiall from "./Img/arcozigomaticoaxiall.jpg";
+// import arcozigomaticocoronall from "./Img/arcozigomaticocoronall.jpg";
+// import arcozigomaticosagitall from "./Img/arcozigomaticosagitall.jpg";
 import seiofrontaltomo from "./Img/seiofrontaltomo.jfif";
 import seiofrontalcoronaltomo from "./Img/seiofrontalcoronaltomo.jfif";
 import seiofrontalaxialtomo from "./Img/seiofrontalaxialtomo.jfif";
@@ -29,7 +86,7 @@ export const PanoramicaDados = [
   {
     id: 1,
     name: "Ângulo da Mandíbula",
-    img: angulo_da_mand,
+    img: [angulodamandibula,angulodamandibulaa],
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Panoramica",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
@@ -37,7 +94,7 @@ export const PanoramicaDados = [
   {
     id: 2,
     name: "Base da Mandibula",
-    img: base_da_mand,
+    img: [basedamandibula, basedamandibulaa],
     texto:
       "Normalmente cortical bem espessa, facil de identificar em qualquer corte e tomara radiologica",
     corte: "Panoramico",
@@ -45,17 +102,17 @@ export const PanoramicaDados = [
   },
   {
     id: 3,
-    name: "Espinha Nasal Anterior",
-    img: esp_nasal_inf,
+    name: "Base da Mandibula",
+    img: [palatoduro, palatoduroo],
     texto:
-      "Formato de V, radiopaco, localizado proximo as raizes dos incisivos centrais",
+      "Normalmente cortical bem espessa, facil de identificar em qualquer corte e tomara radiologica",
     corte: "Panoramico",
     info: "",
   },
   {
     id: 4,
     name: "Fissura Pterigomaxilar",
-    img: fissura_pterigomaxilar,
+    img:[fissurapterigomaxilar, fissurapterigomaxilarr],
     texto:
       "Os nervos alveolares posterior e superior passam pela fissura pterigomandibular, que continua para a fossa infratemporal",
     corte: "Panoramico",
@@ -65,7 +122,7 @@ export const PanoramicaDados = [
   {
     id: 5,
     name: "Fissura Pterigomaxilar",
-    img: fissura_pterigomaxilar,
+    img:[fissurapterigomaxilar, fissurapterigomaxilarr],
     texto:
       "Os nervos alveolares posterior e superior passam pela fissura pterigomandibular, que continua para a fossa infratemporal",
     corte: "Panoramico",
@@ -74,7 +131,7 @@ export const PanoramicaDados = [
   {
     id: 6,
     name: "Fossa Mandibular",
-    img: Fossa_Mandibular,
+    img:[fissurapterigomaxilar, fissurapterigomaxilarr],
     texto:
       "A fossa Mandibular e uma dos 5 principais estruturas que formam a ATM, juntamente com o disco articular, capsula articular, cabeca da mandibula, ligamentos adjacentes",
     corte: "Panoramico",
@@ -83,11 +140,99 @@ export const PanoramicaDados = [
   {
     id: 7,
     name: "IM do Palato duro",
-    img: Imagem_fantasma_do_Palato_duro,
+    img: [imagemfantasmapd, imagemfantasmapdd],
     texto: "",
     corte: "Panoramico",
     info: "",
   },
+  {
+    id: 8,
+    name: "Arco Zigomatico",
+    img: [arcozigomatico,arcozigomaticoo],
+    texto: "",
+    corte: "Panoramico",
+    info: "",
+  },
+  {
+    id: 9,
+    name: "Canal Mandibular",
+    img: [canalmandibular,canalmandibularr],
+    texto: "",
+    corte: "",
+    info: "",
+  },
+  {
+    id: 10,
+    name: "Concha Nasal Inferior",
+    img: [conchainferior,conchainferiorr],
+    texto: "",
+    corte: "",
+    info: "",
+  },
+  {
+    id: 11,
+    name: "Espinha Nasal Anterior",
+    img: [espinhanasalanterior,espinhanasalanteriorr],
+    texto: "",
+    corte: "",
+    info: "",
+  },
+  {
+    id: 12,
+    name: "Extensão Alveolar do Seio Maxilar",
+    img: [extensaoalveolardoseiomaxilar,extensaoalveolardoseiomaxilarr],
+    texto: "",
+    corte: "",
+    info: "",
+  },
+  {
+    id: 13,
+    name: "Forame Mandibular",
+    img: [foramemandibular,foramemandibularr],
+    texto: "",
+    corte: "",
+    info: "",
+  },
+  {
+    id: 14,
+    name: "Forame Mentoniano",
+    img: [foramementoniano,foramementonianoo],
+    texto: "",
+    corte: "",
+    info: "",
+  },
+  {
+    id: 15,
+    name: "Fossa Mandibular",
+    img: [fossamandibular,fossamandibularr],
+    texto: "",
+    corte: "",
+    info: "",
+  },
+  {
+    id: 16,
+    name: "Osso Hioide",
+    img: [ossohioide,ossohioidee],
+    texto: "",
+    corte: "",
+    info: "",
+  },
+  {
+    id: 17,
+    name: "Osso Zigomático",
+    img: [ossozigomatico,ossozigomaticoo],
+    texto: "",
+    corte: "",
+    info: "",
+  },
+  {
+    id: 18,
+    name: "Processo Coronoide",
+    img: [processocoronoide,processocoronoidee],
+    texto: "",
+    corte: "",
+    info: "",
+  }
 ];
 
 export const Tomografias = [
@@ -114,7 +259,7 @@ export const LesoeseAlteracoes = [
   {
     id: 1,
     name: "Cigarro2",
-    img: angulo_da_mand,
+    img: angulodamandibula,
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Panoramica",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
@@ -140,7 +285,7 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Incisivo",
+    tomada: "Incisivos",
   },
   {
     id: 3,
@@ -150,7 +295,7 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Incisivo",
+    tomada: "Pre-Molares",
   },
   {
     id: 4,
@@ -160,7 +305,7 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Incisivo",
+    tomada: "Pre-Molares",
   },
   {
     id: 5,
@@ -170,17 +315,17 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Incisivo",
+    tomada: "Caninos",
   },
   {
     id: 6,
     name: "Espinha Nasal Anterior",
-    img: espinhanasalanterior,
-    imgg: espinhanasalanteriorr,
+    img: espinhanasalanteriorperiapical,
+    imgg: espinhanasalanteriorrperiapical,
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Incisivo",
+    tomada: "Molares",
   },
   {
     id: 7,
@@ -190,7 +335,7 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Incisivo",
+    tomada: "Molares",
   },
 ];
 

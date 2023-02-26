@@ -12,6 +12,8 @@ export default function Leg(props) {
     setUserText(text.replace("__", e.target.value))
   }
 
+
+
   return (
     <div className="Component">
       <div className="C1">
