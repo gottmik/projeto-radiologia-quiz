@@ -91,8 +91,10 @@ export default function Legenda() {
                 <Tab label="Terceiros Molares" {...a11yProps(0)} />
                 <Tab label="Coroas Dentarias" {...a11yProps(1)} />
                 <Tab label="Periápice / Implante" {...a11yProps(2)} />
-                <Tab label="Estruturas de Suporte" {...a11yProps(3)} />
+                <Tab label="Estrutura de Suporte" {...a11yProps(3)} />
                 <Tab label="Anomalias Dentárias" {...a11yProps(4)} />
+                <Tab label="Seios Maxilares" {...a11yProps(5)} />
+                <Tab label="ATM" {...a11yProps(6)} />
               </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
@@ -125,7 +127,7 @@ export default function Legenda() {
             <TabPanel value={value} index={3}>
               {dados
                 .filter((dado) => {
-                  return dado.subtipo === "Periapice-Implante";
+                  return dado.subtipo === "Estrutura de suporte";
                 })
                 .map((dado) => (
                   <Leg dado={dado} />
@@ -134,7 +136,25 @@ export default function Legenda() {
             <TabPanel value={value} index={4}>
               {dados
                 .filter((dado) => {
-                  return dado.subtipo === "Periapice-Implante";
+                  return dado.subtipo === "Anomalias Dentarias";
+                })
+                .map((dado) => (
+                  <Leg dado={dado} />
+                ))}
+            </TabPanel>
+            <TabPanel value={value} index={5}>
+              {dados
+                .filter((dado) => {
+                  return dado.subtipo === "Seios Maxilares";
+                })
+                .map((dado) => (
+                  <Leg dado={dado} />
+                ))}
+            </TabPanel>
+            <TabPanel value={value} index={6}>
+              {dados
+                .filter((dado) => {
+                  return dado.subtipo === "ATM";
                 })
                 .map((dado) => (
                   <Leg dado={dado} />

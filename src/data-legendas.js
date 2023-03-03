@@ -104,7 +104,7 @@ export const DataLegenda = [
   { key: "28", subtipo: "Estrutura de suporte", frase: "As cristas ósseas alveolares encontram-se normais." },
   { key: "29", subtipo: "Estrutura de suporte", frase: "As cristas ósseas alveolares encontram-se levemente envolvidas." },
   { key: "28", subtipo: "Estrutura de suporte", frase: "As cristas óssas alveolares encontram-se envolvidas." },
-  { key: "29", subtipo: "Estrutura de suporte", frase: "Perda óssea horizontal __ generalizada." },
+  { key: "29", subtipo: "Estrutura de suporte", frase: "Perda óssea horizontal generalizada." },
   { key: "28", subtipo: "Estrutura de suporte", frase: "Perda óssea na região de furca do dente __." },
   { key: "29", subtipo: "Estrutura de suporte", frase: "Perda óssea que circunda o periápice do dente __, sugestivo de lesão endo-pério." },
   { key: "28", subtipo: "Estrutura de suporte", frase: "Reabsorção óssea alveolar na região edêntula." },
