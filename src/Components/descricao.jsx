@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import "./descricao.css";
+import "./descricao.css"
 import CopyToClipBoard from "react-copy-to-clipboard";
 import { Link } from "react-router-dom";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
+import { Lesoes } from "../data-panoramica";
 
 export default function Descricao() {
+
+  const datas = Lesoes ?? []; // PUXANDO O ARRAY DO DATABASE
+  // const [busca, setBusca] = useState('');
+
+  const [dados, setDados] = useState(datas);
+
   let radiolucida = "radiolucida";
   let radiopaca = "radiopaca";
   let bemdelimitada = "bem delimitada";
@@ -17,6 +24,7 @@ export default function Descricao() {
   let hiperdenso = "hiperdensa";
   let unilocular = "unilocular";
   let multilocular = "multilocular";
+  let misto = "misto"
 
   let [valor, setValor] = useState("");
 
@@ -44,7 +52,7 @@ export default function Descricao() {
           </div>
           <div className="Container-botoes">
             <div className="Botoes-pai">
-              <div className="buttonn btn1">
+              <div className="buttonn ">
                 <button
                   className="buttonnn "
                   onClick={HandleOnChange}
@@ -54,13 +62,22 @@ export default function Descricao() {
                 </button>
               </div>
 
-              <div className="buttonn2 btn2">
+              <div className="buttonn ">
                 <button
                   className="buttonnn"
                   onClick={HandleOnChange}
                   value={radiopaca}
                 >
                   Radiopaca
+                </button>
+              </div>
+              <div className="buttonn">
+                <button
+                  className="buttonnn"
+                  onClick={HandleOnChange}
+                  value={misto}
+                >
+                  Mista
                 </button>
               </div>
             </div>
@@ -169,6 +186,86 @@ export default function Descricao() {
                 </button>
               </div>
             </div>
+            <div className="Botoes-pai">
+              <div className="buttonn btn1">
+                <button
+                  className="buttonnn"
+                  onClick={HandleOnChange}
+                  value={hipodenso}
+                >
+                  Expansão
+                </button>
+              </div>
+              <div className="buttonn btn2">
+                <button
+                  className="buttonnn"
+                  onClick={HandleOnChange}
+                  value={hiperdenso}
+                >
+                  Sem Expansão
+                </button>
+              </div>
+            </div>
+            <div className="Botoes-pai">
+              <div className="buttonn btn1">
+                <button
+                  className="buttonnn"
+                  onClick={HandleOnChange}
+                  value={hipodenso}
+                >
+                  Com deslocamento dentário
+                </button>
+              </div>
+              <div className="buttonn btn2">
+                <button
+                  className="buttonnn"
+                  onClick={HandleOnChange}
+                  value={hiperdenso}
+                >
+                  Sem deslocamento dentpario
+                </button>
+              </div>
+            </div>
+            <div className="Botoes-pai">
+              <div className="buttonn btn1">
+                <button
+                  className="buttonnn"
+                  onClick={HandleOnChange}
+                  value={hipodenso}
+                >
+                  Expansão
+                </button>
+              </div>
+              <div className="buttonn btn2">
+                <button
+                  className="buttonnn"
+                  onClick={HandleOnChange}
+                  value={hiperdenso}
+                >
+                  Sem Expansão
+                </button>
+              </div>
+            </div>
+            <div className="Botoes-pai">
+              <div className="buttonn btn1">
+                <button
+                  className="buttonnn"
+                  onClick={HandleOnChange}
+                  value={hipodenso}
+                >
+                  Causando reabsorção radicular
+                </button>
+              </div>
+              <div className="buttonn btn2">
+                <button
+                  className="buttonnn"
+                  onClick={HandleOnChange}
+                  value={hiperdenso}
+                >
+                  Sem causar Reabsorção Radicular
+                </button>
+              </div>
+            </div>
             <div className="Botoex">
               <div className="botoess">
                 <button className="copiar" onClick={Zerar}>
@@ -181,6 +278,10 @@ export default function Descricao() {
                 </CopyToClipBoard>
               </div>
             </div>
+            
+          </div>
+          <div className="Opçoes-provaveis paragrafo">
+           {valor}
           </div>
         </div>
         <div className="PanoramicaVoltar">
@@ -189,6 +290,7 @@ export default function Descricao() {
               <KeyboardBackspaceIcon fontSize="large" />
             </button>
           </Link>
+         
         </div>
       </div>
     </div>

@@ -588,7 +588,7 @@ export const PeriapicalDados = [
   },
 ];
 
-export const Lesões = [
+export const Lesoes = [
   {
     id:0,
     name: "Cisto Radicular",
